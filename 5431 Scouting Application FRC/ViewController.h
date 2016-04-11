@@ -72,6 +72,7 @@ extern NSString *matchnumber;
 @property (weak, nonatomic) IBOutlet UITextView *autonCommentsTextView;
 @property (weak, nonatomic) IBOutlet UITextField *MatchNumberTextView;
 @property (weak, nonatomic) IBOutlet UITextField *TeamNumberTextView;
+@property (weak,nonatomic) IBOutlet UISegmentedControl *AutoShot;
 
 - (IBAction)saveAutonData:(id)sender;
 - (IBAction)saveTeleopDataOne:(id)sender;
@@ -118,6 +119,28 @@ extern NSString *matchnumber;
 @property (weak, nonatomic) IBOutlet UISwitch *HTC_Tele_LowBarSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *HTC_Tele_DrawSwitch;
 
+@property (weak, nonatomic) IBOutlet UIStepper *PortStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *ChevalStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *MoatStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *RamSteppers;
+@property (weak, nonatomic) IBOutlet UIStepper *DrawStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *SallyStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *RockStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *RoughStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *LowStepper;
+
+- (IBAction)PortStepPressed:(id)sender;
+- (IBAction)ChevStepPressed:(id)sender;
+- (IBAction)RamStepPressed:(id)sender;
+- (IBAction)DrawStepPressed:(id)sender;
+- (IBAction)SallyStepPressed:(id)sender;
+- (IBAction)RockStepPressed:(id)sender;
+- (IBAction)RoughStepPressed:(id)sender;
+- (IBAction)LowStepPressed:(id)sender;
+- (IBAction)MoatStepPressed:(id)sender;
+
+
+
 // Tele-op Part 2 Objects
 
 - (IBAction)SaveTeleop2Data:(id)sender;
@@ -131,9 +154,30 @@ extern NSString *matchnumber;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *WZASeg;
 @property (weak, nonatomic) IBOutlet UISwitch *PDSwitch;
 @property (weak, nonatomic) IBOutlet UITextView *TeleopCommentsTextBox;
-@property (weak, nonatomic) IBOutlet UITextView *TeleopComments2TextBox; 
+@property (weak, nonatomic) IBOutlet UITextView *TeleopComments2TextBox;
+
+@property (weak, nonatomic) IBOutlet UIStepper *LGFStepper;
+- (IBAction)LGFPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIStepper *LGSStepper;
+- (IBAction)LGSPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIStepper *TFStepper;
+- (IBAction)TFPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIStepper *HGFStepper;
+- (IBAction)HGFPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIStepper *HGSStepper;
+- (IBAction)HGSPressed:(id)sender;
 
 
+
+
+
+- (IBAction)AutonBack:(id)sender;
+
+- (IBAction)Teleop1Back:(id)sender;
+
+- (IBAction)Teleop2Back:(id)sender;
+
+- (IBAction)Teleop2Backsave:(id)sender;
 
 
 

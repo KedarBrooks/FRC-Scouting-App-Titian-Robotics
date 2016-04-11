@@ -75,4 +75,14 @@ Started With A Ball
 startedWithBall:(D2)
 }
 
+Auton Comments
+{
+(D3)
+}
+
+Auton Shot
+{
+Shoot in Auton Capibility:(D4)
+}
+
 #End
